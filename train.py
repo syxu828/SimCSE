@@ -240,6 +240,8 @@ class OurTrainingArguments(TrainingArguments):
         if device.type == "cuda":
             torch.cuda.set_device(device)
 
+        print(device)
+
         return device
 
 
